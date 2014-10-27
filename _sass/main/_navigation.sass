@@ -1,0 +1,104 @@
+nav#menu
+  Z-index: 1
+  display: inherit
+  margin-top: 25px
+  background: $zand
+  text-align: center
+  height: 50px
+  width: 100%
+
+  ul
+    padding: 0
+    background: white
+    margin: 0 auto
+    display: inline-block
+    height: 50px
+
+    li
+      float: left
+      list-style: none
+      margin: 0 2px
+      line-height: 50px
+      height: 50px
+      background: $zand
+      transition: margin 0.3s ease-in-out
+
+      &.active
+        background: $zand
+
+      a
+        color: $aarde
+        text-decoration: none
+        font-size: 1em
+        letter-spacing: normal
+        padding: 0 5px
+
+h3#sitename
+  display: none
+
+@media (min-width: 451px)
+
+  nav#menu
+
+    ul
+
+      li
+        margin-right: 3px
+
+        &:nth-child(1)
+          margin-left: 5px
+
+        a
+          font-size: 1em
+          letter-spacing: 5px
+
+@media (min-width: 901px)
+
+  nav#menu
+
+    ul
+
+      li
+        padding: 0 20px
+        margin-right: 5px
+
+        &:nth-child(1)
+          margin-left: 5px
+
+        a
+          font-size: 1.3em
+          letter-spacing: 5px
+
+
+    h3#sitename
+      display: block
+      font-size: 0.8em
+      line-height: 50px
+      margin: 0
+      position: absolute
+      left: 0.5em
+      color: $aarde
+      opacity: 0
+      transition: opacity 0.3s ease-in-out
+
+      a
+        text-decoration: none
+        color: $aarde
+
+    &.scrolled
+      margin: 0
+      position: fixed
+      top: 0
+
+      ul li
+        margin: 0
+
+      h3#sitename
+        opacity: 1
+
+  .dummy-nav
+    display: none
+    height: 100px
+
+  .show
+    display: block
