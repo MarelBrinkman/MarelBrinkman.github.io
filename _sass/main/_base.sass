@@ -5,6 +5,9 @@
   height: 0
   clear: both
 
+section
+  min-widht: 450px
+
 p
   letter-spacing: normal
   font-weight: normal
@@ -43,13 +46,12 @@ h2
 
 .basic-service,
 .premium-service,
-.pro-service
-  float: none
+.advancedservice
   width: 100%
 
 .basic,
 .premium,
-.pro
+.advanced
   margin: 10px
 
   h3
@@ -64,7 +66,7 @@ h2
 .premium
   background-color: $zand
 
-.pro
+.advanced
   background-color: $wolk
 
 .slogan1
@@ -91,16 +93,7 @@ h2
     padding: 0 5px
 
 .about-company
-
-  p
-    padding: 0 14px
-
-.about-company
   background-color: $zand
-
-  p
-    width: 450px
-    margin: 0 auto
 
 .contact
   background-color: $aarde
@@ -159,7 +152,7 @@ h2
   .about-company,
   .contact
     display: inline-block
-    width: 48%
+    width: 40%
     height: 220px
     padding-top: 40px
     vertical-align: top
@@ -167,7 +160,7 @@ h2
   .about-company
 
     p
-      width: 350px
+      padding: 0 18px
 
   .footer
     height: 200px
@@ -218,7 +211,7 @@ h2
     color: $aarde
     font-size: 42px
     text-align: center
-    padding: 20px
+    padding: 48px 0 24px 0
     display: block
 
     h3
@@ -227,19 +220,15 @@ h2
 
   .basic-service,
   .premium-service,
-  .pro-service
-    vertical-align: top
-
-  .basic-service,
-  .premium-service,
-  .pro-service
+  .advanced-service
     float: left
     width: 33.3%
+    vertical-align: top
 
   .basic,
   .premium,
-  .pro
-    height: 250px
+  .advanced
+    height: 270px
 
   .slogan2
     display: none
@@ -261,7 +250,7 @@ h2
     margin: 180px 0 40px 0
 
     p
-      padding: 0 10px
+      padding: 0 22px
       width: 45%
       display: inline-block
       text-align: left
@@ -281,3 +270,7 @@ h2
     p
       width: 275px
       margin: 10px auto
+
+  .about-company,
+  .contact
+    width: 30%
